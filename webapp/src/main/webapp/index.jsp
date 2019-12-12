@@ -3,5 +3,6 @@
 <em> Docker Engine </em>
 <em> Kube Proxy </em>
 <em> Kubectl </em>
+<em> Kube admin</em>
 <h3> One  test Using ansible to deploy on Docker container</h3>
 <h1> Change by PRAKASH MANKENA :) :)</h1>
