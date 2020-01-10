@@ -4,5 +4,6 @@
 <em> Kube Proxy </em>
 <em> Kubectl </em>
 <em> Kube admin</em>
+<em> api-server cluster store kube-controle-manager kube-scheduler </em>
 <h3> One  test Using ansible to deploy on Docker container</h3>
 <h1> Change by PRAKASH MANKENA :) :)</h1>
