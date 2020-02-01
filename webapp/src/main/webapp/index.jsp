@@ -6,7 +6,8 @@
 <em> Kube admin</em>
 <em> kube api-server </em> 
 <em> cluster-store </em>
+<h1> Kube-controle-manager </h1>
 <em> api-server cluster-store kube-controle-manager kube-scheduler k8s </em>
 <em> kubectl container-engine kube-proxy </em>
 <h3> One  test Using ansible to deploy on Docker container</h3>
-<h1> Change by PRAKASH MANKENA :) :) :)</h1>
+<h1> Change by PRAKASH MANKENA :) :) :) :)</h1>
