@@ -5,6 +5,7 @@
 <em> Kubectl </em>
 <em> Kube admin</em>
 <em> kube api-server </em> 
+<em> cluster-store </em>
 <em> api-server cluster-store kube-controle-manager kube-scheduler k8s </em>
 <em> kubectl container-engine kube-proxy </em>
 <h3> One  test Using ansible to deploy on Docker container</h3>
