@@ -17,7 +17,7 @@ pipeline{
        stage("MVN-Build"){
        steps{
           sh "mvn clean package"
-          sh "mv target/*.war target/myweb.war"
+          sh "mv target/*.war target/miweb.war"
           }
           }
           stage("Deploy on SSH tomcat"){
