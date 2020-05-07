@@ -22,15 +22,17 @@ pipeline{
           }
           stage("Deploy on SSH tomcat"){
               sshagent(['tomcat-user']) {
-               sh """
-               scp -o StrictHostKeyChecking=no target/myweb.war root@172.31.42.203:/opt/apache-maven-3.6.3/webapps/
-               ssh root@172.31.42.203 shutdown.sh
-               ssh root@172.31.42.203 startup.sh 
+                sh """
+                  scp -o StrictHostKeyChecking=no target/myweb.war root@172.31.42.203:/opt/apache-maven-3.6.3/webapps/
+                  
+                  ssh root@172.31.42.203 shutdown.sh
+                  
+                  ssh root@172.31.42.203 startup.sh 
                """
                }
                }
           }
-          }
+         
        
        
      
