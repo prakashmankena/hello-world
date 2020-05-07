@@ -1,0 +1,26 @@
+pipeline{
+  agent any
+    environment{
+      Path = "/opt/apache-maven-3.6.3/bin:$PATH
+      }
+     satges{
+      stage{"Welcome"){
+        steps{
+        echo "Welcome to Declarative pipline script"
+         }
+       }
+       stage("git-hub"){
+       steps{
+          git credentialsId: 'github', url: 'https://github.com/prakashmankena/hello-world/'
+          }
+          }
+       stage("MVN-Build"){
+       steps{
+          sh "mvn clean package"
+          }
+          }
+          }
+          }
+       
+       
+     
