@@ -3,7 +3,7 @@ pipeline{
     environment{
       Path = "/opt/apache-maven-3.6.3/bin:$PATH"
       }
-     satges{
+     stages{
       stage("Welcome"){
         steps{
         echo "Welcome to Declarative pipline script"
