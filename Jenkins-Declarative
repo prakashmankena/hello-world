@@ -1,0 +1,20 @@
+pipeline{
+        agent any 
+        stages{
+            stage("Welcome"){
+              steps{
+                  echo "Welcome GIT-HUB"
+                  }
+            }
+              stage("GIT-CHECKOUT"){
+                steps{
+                    git credentialsId: 'git', url: 'https://github.com/prakashmankena/hello-world'
+              }
+            }
+              stage("MVN-PACKAGE"){
+                steps{
+                    sh 'mvn clean"
+                }
+              }
+        }
+        }
