@@ -13,7 +13,7 @@ pipeline{
             }
               stage("MVN-PACKAGE"){
                 steps{
-                    sh 'mvn clean'
+                    sh "mvn clean"
                 }
               }
         }
