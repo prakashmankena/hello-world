@@ -1,4 +1,5 @@
-currentBuild.displayName = "HDFCIT1-#"+currentBuild.Number
+currentBuild.displayName = "HDFCIT1-#"+currentBuild.number
+
 pipeline{
         agent any 
         stages{
