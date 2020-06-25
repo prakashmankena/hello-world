@@ -1,0 +1,26 @@
+currentBuild.displayName = "HDFCIT1-#"+currentBuild.displayNumber
+pipeline{
+        agent any 
+        stages{
+          stage("WELCOME"){
+              steps{
+                  echo "WELCOME TO JENKINS DECLARATIVE PIPELINE"
+              }
+          }
+          stage ("GIT-HUB"){
+            steps{
+                git credentialsId: 'git', url: 'https://github.com/prakashmankena/hello-world'
+            }
+          }
+          stage("BUILD"){
+            steps{
+                sh "mvn clean"
+            
+            }
+          
+          
+          }
+        }
+        
+
+}
